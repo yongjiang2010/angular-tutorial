@@ -10,6 +10,7 @@ import { ProductAlertsComponent } from './product-list/product-alerts/product-al
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartService } from './services/cart.service';
 import { CartComponent } from './cart/cart.component';
+import { CartPipe } from './cart.pipe';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CartComponent } from './cart/cart.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    CartPipe
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]

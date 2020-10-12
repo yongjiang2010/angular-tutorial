@@ -6,7 +6,9 @@
 
 </div>
 
-<h3>Total to pay: {{totalProct | currency}}</h3>
+<h3>Total to pay: {{totalProct | currency:'NZD'}}</h3>
+
+{{items | cart | uppercase }}
 
 <div>
   <form [formGroup]="checkoutForm" (ngSubmit)="onsubmit(checkoutForm.value)">
