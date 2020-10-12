@@ -9,7 +9,7 @@
 <h3>Total to pay: {{totalProct | currency}}</h3>
 
 <div>
-  <form [formGroup]="checkoutForm" (ngSubmit)="onsubmit(checkoutForm)">
+  <form [formGroup]="checkoutForm" (ngSubmit)="onsubmit(checkoutForm.value)">
     <div>
       <label for="name">Name</label>
       <input type="text" formControlName="name" />
